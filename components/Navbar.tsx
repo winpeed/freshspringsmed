@@ -69,10 +69,11 @@ export default function Simple() {
                 fontWeight={600}
                 color={"white"}
                 bg={"pink.400"}
-                href={"#"}
+                href={"/schedule"}
                 _hover={{
                   bg: "pink.300",
                 }}
+                as={"a"}
               >
                 Schedule Appointment
               </Button>
