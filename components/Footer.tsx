@@ -54,7 +54,7 @@ export default function Footer() {
             <Link href="">
               <Stack direction={"row"} alignItems={"center"}>
                 <MdOutlineEmail />
-                <Text>Chat</Text>
+                <Text>Email</Text>
               </Stack>
             </Link>
           </Stack>
@@ -74,7 +74,6 @@ export default function Footer() {
           <Stack align={"flex-start"}>
             <ListHeader>Follow Us</ListHeader>
             <Link href={"#"}>Facebook</Link>
-            <Link href={"#"}>Twitter</Link>
             <Link href={"#"}>Instagram</Link>
             <Link href={"#"}>Email</Link>
           </Stack>
