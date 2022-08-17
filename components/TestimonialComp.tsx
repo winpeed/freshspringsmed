@@ -46,14 +46,6 @@ const TestimonialContent = ({ children }: { children: ReactNode }) => {
   );
 };
 
-const TestimonialHeading = ({ children }: { children: ReactNode }) => {
-  return (
-    <Heading as={"h3"} fontSize={"xl"}>
-      {children}
-    </Heading>
-  );
-};
-
 const TestimonialText = ({ children }: { children: ReactNode }) => {
   return (
     <Text
@@ -70,7 +62,7 @@ const TestimonialText = ({ children }: { children: ReactNode }) => {
 const TestimonialAvatar = ({ src, name }: { src: string; name: string }) => {
   return (
     <Flex align={"center"} mt={8} direction={"column"}>
-      <Avatar src={src} alt={name} mb={2} />
+      <Avatar src={src} mb={2} />
       <Stack spacing={-1} align={"center"}>
         <Text fontWeight={600}>{name}</Text>
       </Stack>
