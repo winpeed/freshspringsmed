@@ -67,7 +67,7 @@ const features = [
 
 export default function CoreValues() {
   return (
-    <Box p={4}>
+    <Box px={4} py={16} maxW={"7xl"}>
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
         <Heading fontSize={"3xl"}>Core Values</Heading>
         <Text color={"gray.600"} fontSize={"xl"}>

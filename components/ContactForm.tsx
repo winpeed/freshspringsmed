@@ -17,6 +17,7 @@ import {
   useClipboard,
   useColorModeValue,
   VStack,
+  Text,
 } from "@chakra-ui/react";
 import React from "react";
 import { BsFacebook, BsPerson, BsInstagram } from "react-icons/bs";
@@ -42,7 +43,6 @@ export default function ContactForm() {
 
   return (
     <Flex
-      bg={useColorModeValue("gray.100", "gray.900")}
       align="center"
       justify="center"
       css={{
@@ -56,17 +56,19 @@ export default function ContactForm() {
         m={{ base: 5, md: 16, lg: 10 }}
         p={{ base: 5, lg: 16 }}
       >
+        <Text
+          py="5"
+          px="10"
+          maxW={"400"}
+          my={"0"}
+          mx={"auto"}
+          textAlign="center"
+          fontSize={"xl"}
+        >
+          We are always at your service. Feel free to leave us a message.
+        </Text>
         <Box>
           <VStack spacing={{ base: 4, md: 8, lg: 20 }}>
-            <Heading
-              fontSize={{
-                base: "4xl",
-                md: "5xl",
-              }}
-            >
-              Contact Us
-            </Heading>
-
             <Stack
               spacing={{ base: 4, md: 8, lg: 20 }}
               direction={{ base: "column", md: "row" }}

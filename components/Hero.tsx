@@ -14,8 +14,15 @@ export default function SplitScreen() {
       minH={"100vh"}
       direction={{ base: "column", md: "row" }}
       alignItems="center"
+      maxW={"7xl"}
     >
-      <Flex p={8} flex={1} align={"center"} justify={"center"}>
+      <Flex
+        p={8}
+        flex={1}
+        align={"center"}
+        justify={"center"}
+        marginTop={{ lg: "2.5em", base: "4em" }}
+      >
         <Stack spacing={6} w={"full"} maxW={"lg"}>
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
             <Text

@@ -74,7 +74,7 @@ export default function TestimonialComp() {
   return (
     <Box bg={useColorModeValue("gray.100", "gray.700")}>
       <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
-        <Stack spacing={0} align={"center"}>
+        <Stack spacing={0} align={"center"} maxW={"7xl"}>
           <Heading>Testimonials</Heading>
           <Text textAlign="center">
             Our clients love us! Read what they have to say about us.

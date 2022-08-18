@@ -4,6 +4,7 @@ import ContactForm from "../components/ContactForm";
 import FaqAccordion from "../components/FaqAccordion";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import PageTitle from "../components/PageTitle";
 
 const Faq: NextPage = () => {
   return (
@@ -12,11 +13,12 @@ const Faq: NextPage = () => {
         <title>FAQs - Fresh Springs Medical Services</title>
         <meta
           name="description"
-          content="Here are some answers to the many questions people ask about pregnancy, IVF, ICSI and other fertility related challenges and questions.."
+          content="Here are some answers to the many questions people ask about pregnancy, IVF, ICSI and other fertility related challenges and questions."
         />
         <link rel="icon" href="/logo.jpg" />
       </Head>
       <Navbar />
+      <PageTitle firstTitle="Frequently Asked" secondTitle="Questions" />
       <FaqAccordion />
       <Footer />
     </>

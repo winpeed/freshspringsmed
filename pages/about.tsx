@@ -1,27 +1,28 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import ContactForm from "../components/ContactForm";
+import AboutComp from "../components/AboutComp";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import PageTitle from "../components/PageTitle";
+import VisionComp from "../components/VisionComp";
 
-const ContactUs: NextPage = () => {
+const About: NextPage = () => {
   return (
     <>
       <Head>
-        <title>ContactUs - Fresh Springs Medical Services</title>
+        <title>About - Fresh Springs Medical Services</title>
         <meta
           name="description"
           content="We are always at your service. Feel free to leave us a message. Your message is treated with utmost confidentiality."
         />
-        <link rel="icon" href="/logo.jpg" />
       </Head>
       <Navbar />
-      <PageTitle firstTitle="Contact Us" />
-      <ContactForm />
+      <PageTitle firstTitle="About Us" />
+      <AboutComp />
+      <VisionComp />
       <Footer />
     </>
   );
 };
 
-export default ContactUs;
+export default About;

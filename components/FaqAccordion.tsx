@@ -66,16 +66,6 @@ const questions = [
 function FaqAccordion() {
   return (
     <>
-      <Heading
-        fontSize={{
-          base: "4xl",
-          md: "5xl",
-        }}
-        p={4}
-        textAlign={"center"}
-      >
-        Frequently Asked Questions (FAQ)
-      </Heading>
       <Accordion allowToggle>
         {questions.map((item) => {
           return (
