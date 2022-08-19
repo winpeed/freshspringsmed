@@ -19,9 +19,14 @@ import {
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon, HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
-const Links = ["Home", "About", "FAQs", "Contact Us"];
+const Links = [
+  { id: 1, text: "Home", url: "" },
+  { id: 2, text: "About", url: "/about" },
+  { id: 3, text: "FAQs", url: "/faq" },
+  { id: 4, text: "Contact Us", url: "/contact" },
+];
 
-const NavLink = ({ children }: { children: ReactNode }) => (
+const NavLink = ({ children, url }: { children: ReactNode; url: string }) => (
   <Link
     px={2}
     py={1}
@@ -30,7 +35,7 @@ const NavLink = ({ children }: { children: ReactNode }) => (
       textDecoration: "none",
       bg: useColorModeValue("gray.200", "gray.700"),
     }}
-    href={"#"}
+    href={`${url}`}
   >
     {children}
   </Link>
@@ -75,7 +80,9 @@ export default function Simple() {
               display={{ base: "none", md: "flex" }}
             >
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <NavLink key={link.id} url={`${link.url}`}>
+                  {link.text}
+                </NavLink>
               ))}
               <Button
                 display={{ base: "flex", md: "inline-flex" }}
@@ -103,7 +110,9 @@ export default function Simple() {
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <NavLink key={link.id} url={`${link.url}`}>
+                  {link.text}
+                </NavLink>
               ))}
               <Button
                 display={{ base: "inline-flex", md: "inline-flex" }}
