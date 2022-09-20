@@ -51,15 +51,15 @@ const TestimonialText = ({ children }: { children: ReactNode }) => {
     <Text
       textAlign={"center"}
       color={useColorModeValue("gray.600", "gray.400")}
-      fontSize={"16"}
-      lineHeight={"7"}
+      fontSize={{ base: "md", lg: "lg" }}
+      lineHeight={1.7}
     >
       {children}
     </Text>
   );
 };
 
-const TestimonialAvatar = ({ src, name }: { src: string; name: string }) => {
+const TestimonialAvatar = ({ src, name }: { src?: string; name: string }) => {
   return (
     <Flex align={"center"} mt={8} direction={"column"}>
       <Avatar src={src} mb={2} />
@@ -75,8 +75,19 @@ export default function TestimonialComp() {
     <Box bg={useColorModeValue("gray.100", "gray.700")}>
       <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={"center"} maxW={"7xl"}>
-          <Heading>Testimonials</Heading>
-          <Text textAlign="center">
+          <Heading
+            fontSize={"5xl"}
+            fontFamily="Inter, sans-serif"
+            paddingTop={10}
+            paddingBottom={4}
+          >
+            Testimonials
+          </Heading>
+          <Text
+            textAlign="center"
+            fontSize={{ base: "md", lg: "lg" }}
+            lineHeight={1.7}
+          >
             Our clients love us! Read what they have to say about us.
           </Text>
         </Stack>
@@ -92,11 +103,26 @@ export default function TestimonialComp() {
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                "https://www.freshspringsmed.com/wp-content/uploads/2018/12/f-hero-sm-compressor.jpg&auto=format&fit=crop&w=100&q=80"
+                "https://www.freshspringsmed.com/wp-content/uploads/2018/12/f-hero-sm-compressor.jpg"
               }
               name={"Fatima Ilu Hafiz"}
             />
           </Testimonial>
+
+          <Testimonial>
+            <TestimonialContent>
+              <TestimonialText>
+                It is run by one of the best O & G consultants in Nigeria.
+              </TestimonialText>
+            </TestimonialContent>
+            <TestimonialAvatar
+              src={
+                "https://www.freshspringsmed.com/wp-content/uploads/2018/12/susan-odok-e1547176874498.jpg"
+              }
+              name={"Susan O"}
+            />
+          </Testimonial>
+
           <Testimonial>
             <TestimonialContent>
               <TestimonialText>
@@ -111,34 +137,15 @@ export default function TestimonialComp() {
               name={"Salome N."}
             />
           </Testimonial>
+
           <Testimonial>
             <TestimonialContent>
               <TestimonialText>
-                It is run by one of the best O & G consultants in Nigeria.
+                Doctor you are too much. God is really using you to wipe away
+                tears from people’s eyes.
               </TestimonialText>
             </TestimonialContent>
-            <TestimonialAvatar
-              src={
-                "https://www.freshspringsmed.com/wp-content/uploads/2018/12/susan-odok-e1547176874498.jpg"
-              }
-              name={"Susan O"}
-            />
-          </Testimonial>
-          <Testimonial>
-            <TestimonialContent>
-              <TestimonialText>
-                Fresh Springs Medical Services offers the best gynecological
-                services in the FCT. They have TOP NOTCH equipment as well as
-                the best hands to put them to judicious use. I am a beneficiary
-                of their services.
-              </TestimonialText>
-            </TestimonialContent>
-            <TestimonialAvatar
-              src={
-                "https://www.freshspringsmed.com/wp-content/uploads/2019/05/joy-bur.jpeg"
-              }
-              name={"Joy Bur"}
-            />
+            <TestimonialAvatar name={"Precious Chinedum Emmanuel Ibe"} />
           </Testimonial>
 
           <Testimonial>
@@ -160,34 +167,31 @@ export default function TestimonialComp() {
           <Testimonial>
             <TestimonialContent>
               <TestimonialText>
-                Doctor you are too much. God is really using you to wipe away
-                tears from people’s eyes.
+                Fresh Springs Medical Services offers the best gynecological
+                services in the FCT. They have TOP NOTCH equipment as well as
+                the best hands to put them to judicious use. I am a beneficiary
+                of their services.
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                "https://www.freshspringsmed.com/wp-content/uploads/2018/12/janet-afolayan-e15471710217.jpg"
+                "https://www.freshspringsmed.com/wp-content/uploads/2019/05/joy-bur.jpeg"
               }
-              name={"Precious Chinedum Emmanuel Ibe"}
+              name={"Joy Bur"}
             />
           </Testimonial>
 
           <Testimonial>
             <TestimonialContent>
               <TestimonialText>
-                Good Evening Doctor ,I just wanted to say a big thank you to you
+                Good Evening Doctor, I just wanted to say a big thank you to you
                 for all your support, encouragement and professional advice in
                 my years of looking for a child .I gave birth to a baby boy on
-                the 15th September, just got discharged. Will see you soonest .I
+                the 15th September, just got discharged. Will see you soonest. I
                 appreciate your efforts sir.
               </TestimonialText>
             </TestimonialContent>
-            <TestimonialAvatar
-              src={
-                "https://www.freshspringsmed.com/wp-content/uploads/2018/12/janet-afolayan-e1547910217.jpg"
-              }
-              name={"Tamarapriye Odaro"}
-            />
+            <TestimonialAvatar name={"Tamarapriye Odaro"} />
           </Testimonial>
         </SimpleGrid>
       </Container>

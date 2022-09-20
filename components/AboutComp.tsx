@@ -52,11 +52,19 @@ export default function AboutComp() {
             }
           >
             <VStack spacing={{ base: 4, sm: 6 }}>
-              <Text fontSize={"lg"}>
+              <Text
+                fontSize={{ base: "md", lg: "lg" }}
+                color={"gray.500"}
+                lineHeight={1.7}
+              >
                 Fresh Springs Medical Services is an healthcare center located
                 in the hearts of the Federal Capital Territory, Abuja.
               </Text>
-              <Text fontSize={"lg"}>
+              <Text
+                fontSize={{ base: "md", lg: "lg" }}
+                color={"gray.500"}
+                lineHeight={1.7}
+              >
                 We offer a wide variety of fertility treatments from the simple
                 to the most complex including ovulation induction, artificial
                 insemination, in-vitro fertilization (IVF) and intra-cytoplasmic

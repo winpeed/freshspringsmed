@@ -22,7 +22,7 @@ const features = [
   },
   {
     id: 3,
-    title: "Excellence in quality of service delivery.",
+    title: "Service to Humanity",
   },
   {
     id: 5,
@@ -30,7 +30,7 @@ const features = [
   },
   {
     id: 6,
-    title: "Integrity in our day-to-day activities.",
+    title: "Growth.",
   },
   {
     id: 7,
@@ -38,7 +38,7 @@ const features = [
   },
   {
     id: 8,
-    title: "Service to Humanity.",
+    title: "Excellence in quality of service delivery.",
   },
   {
     id: 9,
@@ -46,7 +46,7 @@ const features = [
   },
   {
     id: 10,
-    title: "Growth.",
+    title: "Integrity in our day-to-day activities.",
   },
   {
     id: 11,
@@ -67,17 +67,34 @@ const features = [
 
 export default function CoreValues() {
   return (
-    <Box px={4} py={16} maxW={"7xl"}>
+    <Box
+      px={4}
+      maxW={"7xl"}
+      paddingTop={2}
+      paddingBottom={16}
+      marginBottom={10}
+    >
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
-        <Heading fontSize={"3xl"}>Core Values</Heading>
-        <Text color={"gray.600"} fontSize={"xl"}>
+        <Heading
+          fontSize={"4xl"}
+          fontFamily="Inter, sans-serif"
+          paddingTop={10}
+          paddingBottom={4}
+        >
+          Core Values
+        </Heading>
+        <Text
+          fontSize={{ base: "md", lg: "lg" }}
+          color={"gray.500"}
+          lineHeight={1.7}
+        >
           These principles guide our operations at Fresh Springs Medical
           Services.
         </Text>
       </Stack>
 
       <Container maxW={"6xl"} mt={10}>
-        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
+        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={6}>
           {features.map((feature) => (
             <HStack key={feature.id} align={"top"}>
               <Box color={"green.400"} px={2}>

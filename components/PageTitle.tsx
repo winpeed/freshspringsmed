@@ -36,8 +36,11 @@ export default function PageTitle({
         >
           <Heading
             fontWeight={600}
-            fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
-            lineHeight={"110%"}
+            fontSize={"5xl"}
+            fontFamily="Inter, sans-serif"
+            paddingTop={4}
+            paddingBottom={4}
+            lineHeight="1.2"
           >
             {firstTitle}{" "}
             <Text as={"span"} color={"#4299e1"}>

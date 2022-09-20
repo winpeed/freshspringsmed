@@ -53,12 +53,12 @@ export default function ContactForm() {
     >
       <Box
         borderRadius="lg"
-        m={{ base: 5, md: 16, lg: 10 }}
-        p={{ base: 5, lg: 16 }}
+        m={{ base: 5, md: 10, lg: 6 }}
+        p={{ base: 5, lg: 6 }}
       >
         <Text
           py="5"
-          px="10"
+          px="3"
           maxW={"400"}
           my={"0"}
           mx={"auto"}
@@ -83,22 +83,24 @@ export default function ContactForm() {
                   closeOnClick={false}
                   hasArrow
                 >
-                  <IconButton
-                    aria-label="email"
-                    variant="ghost"
-                    size="lg"
-                    fontSize="3xl"
-                    icon={<MdEmail />}
-                    _hover={{
-                      bg: "blue.500",
-                      color: useColorModeValue("white", "gray.700"),
-                    }}
-                    onClick={onCopy}
-                    isRound
-                  />
+                  <Link href="mailto:freshspringsmed@gmail.com">
+                    <IconButton
+                      aria-label="email"
+                      variant="ghost"
+                      size="lg"
+                      fontSize="3xl"
+                      icon={<MdEmail />}
+                      _hover={{
+                        bg: "blue.500",
+                        color: useColorModeValue("white", "gray.700"),
+                      }}
+                      onClick={onCopy}
+                      isRound
+                    />
+                  </Link>
                 </Tooltip>
 
-                <Link href="#">
+                <Link href="https://facebook.com/freshspringsmed">
                   <IconButton
                     aria-label="facebook"
                     variant="ghost"
@@ -113,7 +115,7 @@ export default function ContactForm() {
                   />
                 </Link>
 
-                <Link href="#">
+                <Link href="https://www.instagram.com/freshspringsmedicalservices/">
                   <IconButton
                     aria-label="instagram"
                     variant="ghost"
@@ -181,6 +183,24 @@ export default function ContactForm() {
                   </Button>
                 </VStack>
               </Box>
+            </Stack>
+            <Stack direction="column" alignItems={"center"}>
+              <Text
+                py="5"
+                px="10"
+                maxW={"400"}
+                my={"0"}
+                mx={"auto"}
+                textAlign="center"
+                fontWeight="600"
+                fontSize={"2xl"}
+              >
+                Office Address
+              </Text>
+              <Text maxWidth="400px" margin="0 auto" textAlign="center">
+                No 3 Yawuri Street, off Jere street, Behind Rita Lori hotel.
+                Garki II, Abuja.
+              </Text>
             </Stack>
           </VStack>
         </Box>

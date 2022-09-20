@@ -20,7 +20,12 @@ const Logo = (props: any) => {
 
 const ListHeader = ({ children }: { children: ReactNode }) => {
   return (
-    <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
+    <Text
+      fontWeight={"500"}
+      fontSize="1.5em"
+      mb={2}
+      fontFamily="Inter, sans-serif"
+    >
       {children}
     </Text>
   );
@@ -43,21 +48,21 @@ export default function Footer() {
           <Stack align={"flex-start"}>
             <ListHeader>Contact</ListHeader>
 
-            <Link href="">
-              <Stack direction={"row"} alignItems={"center"}>
+            <Link href="tel:+2348032507418">
+              <Stack direction="row" alignItems={"center"}>
                 <FiPhoneCall />
                 <Text>Call</Text>
               </Stack>
             </Link>
 
-            <Link href="">
+            <Link href="https://wa.me/2348032507418">
               <Stack direction={"row"} alignItems={"center"}>
                 <FaWhatsapp />
                 <Text>Chat</Text>
               </Stack>
             </Link>
 
-            <Link href="">
+            <Link href="mailto:freshspringsmed@gmail.com">
               <Stack direction={"row"} alignItems={"center"}>
                 <MdOutlineEmail />
                 <Text>Email</Text>
@@ -66,45 +71,28 @@ export default function Footer() {
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Company</ListHeader>
-            <Link href={"#"}>About Us</Link>
-            <Link href={"#"}>Services</Link>
-            <Link href={"#"}>Core Values</Link>
-            <Link href={"#"}>Contact Us</Link>
-            <Link href={"#"}>Schedule Appointment</Link>
+            <Link href="/">Home</Link>
+            <Link href="/about">About Us</Link>
+            <Link href="/services">Services</Link>
+            <Link href="/contact"> Contact Us</Link>
+            <Link href="/schedule">Schedule Appointment</Link>
+            <Link href="/faq">Frequently Asked Questions</Link>
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Legal</ListHeader>
-            <Link href={"#"}>Cookies Policy</Link>
-            <Link href={"#"}>Privacy Policy</Link>
+            <Link href="privacy">Privacy Policy</Link>
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Follow Us</ListHeader>
-            <Link href={"#"}>Facebook</Link>
-            <Link href={"#"}>Instagram</Link>
-            <Link href={"#"}>Email</Link>
+            <Link href="https://facebook.com/freshspringsmed">Facebook</Link>
+            <Link href="https://www.instagram.com/freshspringsmedicalservices/">
+              Instagram
+            </Link>
+            <Link href="mailto:freshspringsmed@gmail.com">Email</Link>
           </Stack>
         </SimpleGrid>
       </Container>
       <Box py={10}>
-        <Flex
-          align={"center"}
-          _before={{
-            content: '""',
-            borderBottom: "1px solid",
-            borderColor: useColorModeValue("gray.200", "gray.700"),
-            flexGrow: 1,
-            mr: 8,
-          }}
-          _after={{
-            content: '""',
-            borderBottom: "1px solid",
-            borderColor: useColorModeValue("gray.200", "gray.700"),
-            flexGrow: 1,
-            ml: 8,
-          }}
-        >
-          <Logo />
-        </Flex>
         <Text pt={6} fontSize={"sm"} textAlign={"center"}>
           © 2022 Fresh Springs Medical Services. All rights reserved
         </Text>

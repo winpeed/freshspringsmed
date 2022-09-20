@@ -27,11 +27,12 @@ export default function SplitScreen() {
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
             <Text
               as={"span"}
+              py={2}
               position={"relative"}
               _after={{
                 content: "''",
                 width: "full",
-                height: useBreakpointValue({ base: "10%", md: "20%" }),
+                height: useBreakpointValue({ base: "10%", md: "12%" }),
                 position: "absolute",
                 bottom: 1,
                 left: 0,
@@ -46,7 +47,11 @@ export default function SplitScreen() {
               and Affordable Fertility Treatments
             </Text>{" "}
           </Heading>
-          <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
+          <Text
+            fontSize={{ base: "md", lg: "lg" }}
+            color={"gray.500"}
+            lineHeight={1.7}
+          >
             Fresh Springs Medical Services is conveniently located in the heart
             of FCT, Abuja and provides affordable fertility care to her clients.
           </Text>
@@ -71,8 +76,8 @@ export default function SplitScreen() {
           src={
             "https://www.freshspringsmed.com/wp-content/uploads/2018/12/adorable-baby.jpg"
           }
-          height={350}
-          width={450}
+          height={390}
+          width={650}
         />
       </Flex>
     </Stack>
