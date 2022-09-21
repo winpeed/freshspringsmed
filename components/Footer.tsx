@@ -12,6 +12,7 @@ import {
 import { ReactNode } from "react";
 import { FiPhoneCall } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
+import { BsFillHeartFill } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
 
 const Logo = (props: any) => {
@@ -94,7 +95,36 @@ export default function Footer() {
       </Container>
       <Box py={10}>
         <Text pt={6} fontSize={"sm"} textAlign={"center"}>
-          © 2022 Fresh Springs Medical Services. All rights reserved
+          © 2022 Fresh Springs Medical Services.
+        </Text>
+
+        <Text
+          pt={6}
+          fontSize={"sm"}
+          display="flex"
+          alignItems={"center"}
+          textAlign="center"
+          justifyContent="center"
+        >
+          Built with{" "}
+          <span
+            style={{
+              display: "flex",
+              alignItems: "center",
+              marginRight: "0.3em",
+            }}
+          >
+            <BsFillHeartFill style={{ margin: "0em 0.5em", color: "red" }} /> by{" "}
+            {"  "}
+          </span>{" "}
+          <Link
+            href="https://winpeed.com"
+            color="blue.700"
+            fontWeight="600"
+            textDecoration="underline"
+          >
+            {"  "} winpeed
+          </Link>
         </Text>
       </Box>
     </Box>

@@ -37,7 +37,7 @@ const Feature = ({ text, icon }: FeatureProps) => {
 
 export default function ServicesComp() {
   return (
-    <Container maxW={"5xl"} py={12} marginBottom="2.5em">
+    <Container maxW={"5xl"} py={12} marginBottom="0.5em">
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4}>
           <Heading
@@ -266,8 +266,8 @@ export default function ServicesComp() {
       <SimpleGrid
         columns={{ base: 1, md: 2 }}
         spacing={10}
-        paddingTop="2em"
-        paddingBottom="2em"
+        paddingTop="1em"
+        paddingBottom="1em"
       >
         <Stack spacing={4}>
           <Heading

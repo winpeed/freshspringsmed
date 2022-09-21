@@ -74,11 +74,9 @@ export default function SplitScreen() {
       </Flex>
       <Flex flex={1}>
         <Image
-          alt={"Login Image"}
+          alt={"Hero Image"}
           objectFit={"cover"}
-          src={
-            "https://www.freshspringsmed.com/wp-content/uploads/2018/12/adorable-baby.jpg"
-          }
+          src="/adorable-baby.jpg"
           height={390}
           width={650}
         />

@@ -5,6 +5,7 @@ import CoreValues from "../components/CoreValues";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import PageTitle from "../components/PageTitle";
+import PrivacyComp from "../components/PrivacyComp";
 import ScheduleWrapComp from "../components/ScheduleWrapComp";
 import VisionComp from "../components/VisionComp";
 
@@ -15,12 +16,12 @@ const Privacy: NextPage = () => {
         <title>Privacy Policy - Fresh Springs Medical Services</title>
         <meta
           name="description"
-          content="Here are some of the services we offer at Fresh Springs Medical Services."
+          content="This is the policy that operate with respect to Privacy at Fresh Springs Medical Services"
         />
       </Head>
       <Navbar />
       <PageTitle firstTitle="Privacy" secondTitle="Policy" />
-
+      <PrivacyComp />
       <ScheduleWrapComp />
       <Footer />
     </>

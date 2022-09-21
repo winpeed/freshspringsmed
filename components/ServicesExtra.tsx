@@ -21,7 +21,7 @@ export default function ServicesExtra() {
           <Stack
             flex={1}
             justify={{ lg: "center" }}
-            py={{ base: 4, md: 10, xl: 20 }}
+            py={{ base: 4, md: 5, xl: 10 }}
           >
             <Box mb={{ base: 8, md: 20 }}>
               <Heading
