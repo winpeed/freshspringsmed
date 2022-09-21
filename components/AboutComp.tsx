@@ -32,12 +32,10 @@ export default function AboutComp() {
           <Image
             rounded={"md"}
             alt={"product image"}
-            src={
-              "https://www.freshspringsmed.com/wp-content/uploads/2018/12/fresh-springs-building.jpg"
-            }
+            src="/building.jpg"
             fit={"contain"}
             align={"center"}
-            w={"90%"}
+            w={"95%"}
             h={{ base: "100%", sm: "230px", lg: "500px" }}
           />
         </Flex>

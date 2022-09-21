@@ -2,16 +2,11 @@ import { ReactNode } from "react";
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
   Link,
   IconButton,
   Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
+  Image,
   useDisclosure,
   useColorModeValue,
   useColorMode,
@@ -37,6 +32,7 @@ const NavLink = ({ children, url }: { children: ReactNode; url: string }) => (
       bg: useColorModeValue("gray.200", "gray.700"),
     }}
     href={`${url}`}
+    style={{ fontWeight: "600" }}
   >
     {children}
   </Link>
@@ -55,6 +51,8 @@ export default function Navbar() {
         zIndex="1000"
         bg={useColorModeValue("white", "#171923")}
         color={useColorModeValue("gray.700", "gray.200")}
+        borderBottom="2px solid #edf2f7"
+        borderTop="2px solid #edf2f7"
       >
         <Flex
           h={16}
@@ -70,9 +68,26 @@ export default function Navbar() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={"center"} maxW={"7xl"}>
-            <Box paddingLeft={{ xl: "4em", lg: "2em", base: 0, md: "1em" }}>
-              Logo
-            </Box>
+            <Link href="/">
+              <Box
+                paddingLeft={{ xl: "2em", lg: "2em", base: 0, md: "1em" }}
+                fontWeight="600"
+                display="flex"
+                alignItems="center"
+                textTransform={"uppercase"}
+              >
+                <Image
+                  rounded={"md"}
+                  alt={"feature image"}
+                  src="/logo.jpg"
+                  objectFit={"cover"}
+                  height="30px"
+                  width="30px"
+                  style={{ marginRight: "0.6em" }}
+                />
+                Fresh Springs
+              </Box>
+            </Link>
           </HStack>
           <Flex alignItems={"center"}>
             <HStack
@@ -90,10 +105,10 @@ export default function Navbar() {
                 fontSize={"sm"}
                 fontWeight={600}
                 color={"white"}
-                bg={"pink.400"}
+                bg={"green.400"}
                 href={"/schedule"}
                 _hover={{
-                  bg: "pink.300",
+                  bg: "green.300",
                 }}
                 as={"a"}
               >
@@ -120,9 +135,9 @@ export default function Navbar() {
                 fontSize={"sm"}
                 fontWeight={600}
                 color={"white"}
-                bg={"pink.400"}
+                bg={"green.400"}
                 _hover={{
-                  bg: "pink.300",
+                  bg: "green.300",
                 }}
                 as={"a"}
                 href={"/schedule"}
