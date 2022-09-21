@@ -4,6 +4,8 @@ import CoreValues from "../components/CoreValues";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
+import ScheduleComp from "../components/ScheduleComp";
+import ScheduleWrapComp from "../components/ScheduleWrapComp";
 import TestimonialComp from "../components/TestimonialComp";
 
 const Home: NextPage = () => {
@@ -21,6 +23,7 @@ const Home: NextPage = () => {
       <Hero />
       <CoreValues />
       <TestimonialComp />
+      <ScheduleWrapComp />
       <Footer />
     </>
   );

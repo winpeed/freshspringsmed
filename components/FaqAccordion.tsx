@@ -65,25 +65,45 @@ const questions = [
 
 function FaqAccordion() {
   return (
-    <>
+    <Box
+      textAlign="center"
+      paddingTop="2em"
+      px={6}
+      paddingBottom="5em"
+      maxWidth="1100px"
+      margin="0 auto"
+    >
       <Accordion allowToggle>
         {questions.map((item) => {
           return (
             <AccordionItem key={item.id}>
               <h2>
                 <AccordionButton>
-                  <Box flex="1" textAlign="left">
+                  <Box
+                    flex="1"
+                    textAlign="left"
+                    fontSize="1.2rem"
+                    padding="1em 0em"
+                  >
                     {item.title}
                   </Box>
                   <AccordionIcon />
                 </AccordionButton>
               </h2>
-              <AccordionPanel pb={4}>{item.body}</AccordionPanel>
+              <AccordionPanel
+                textAlign="left"
+                lineHeight="1.9"
+                fontSize="1rem"
+                fontWeight="400"
+                padding="1em 0em"
+              >
+                {item.body}
+              </AccordionPanel>
             </AccordionItem>
           );
         })}
       </Accordion>
-    </>
+    </Box>
   );
 }
 

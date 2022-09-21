@@ -19,7 +19,7 @@ const Schedule: NextPage = () => {
         <link rel="icon" href="/logo.jpg" />
       </Head>
       <Navbar />
-      <PageTitle firstTitle="Schedule an" secondTitle="appointment" />
+      <PageTitle firstTitle="Schedule " secondTitle=" an appointment" />
       <ScheduleComp />
       <Footer />
     </>

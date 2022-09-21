@@ -7,6 +7,7 @@ import {
   Text,
   useBreakpointValue,
 } from "@chakra-ui/react";
+import Link from "next/link";
 
 export default function SplitScreen() {
   return (
@@ -56,16 +57,18 @@ export default function SplitScreen() {
             of FCT, Abuja and provides affordable fertility care to her clients.
           </Text>
           <Stack direction={{ base: "column", md: "row" }} spacing={4}>
-            <Button
-              rounded={"full"}
-              bg={"green.400"}
-              color={"white"}
-              _hover={{
-                bg: "green.500",
-              }}
-            >
-              Send a Message
-            </Button>
+            <Link href="/contact">
+              <Button
+                rounded={"full"}
+                bg={"green.400"}
+                color={"white"}
+                _hover={{
+                  bg: "green.500",
+                }}
+              >
+                Send a Message
+              </Button>
+            </Link>
           </Stack>
         </Stack>
       </Flex>

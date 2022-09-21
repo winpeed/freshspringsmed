@@ -76,7 +76,7 @@ export default function TestimonialComp() {
       <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={"center"} maxW={"7xl"}>
           <Heading
-            fontSize={"5xl"}
+            fontSize={"4xl"}
             fontFamily="Inter, sans-serif"
             paddingTop={10}
             paddingBottom={4}

@@ -5,6 +5,7 @@ import FaqAccordion from "../components/FaqAccordion";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import PageTitle from "../components/PageTitle";
+import ScheduleWrapComp from "../components/ScheduleWrapComp";
 
 const Faq: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Faq: NextPage = () => {
       <Navbar />
       <PageTitle firstTitle="Frequently Asked" secondTitle="Questions" />
       <FaqAccordion />
+      <ScheduleWrapComp />
       <Footer />
     </>
   );

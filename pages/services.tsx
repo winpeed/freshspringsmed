@@ -20,7 +20,7 @@ const Services: NextPage = () => {
         />
       </Head>
       <Navbar />
-      <PageTitle firstTitle="Services" />
+      <PageTitle secondTitle="Services" />
       <ServicesComp />
       <ServicesExtra />
       <ScheduleWrapComp />

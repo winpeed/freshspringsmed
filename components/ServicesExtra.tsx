@@ -12,7 +12,7 @@ import {
 
 export default function ServicesExtra() {
   return (
-    <Box position={"relative"}>
+    <Box position={"relative"} marginBottom="3em">
       <Flex flex={1} zIndex={0} display={{ base: "none", lg: "flex" }}>
         <Flex w={"full"} h={"full"} />
       </Flex>
@@ -45,7 +45,6 @@ export default function ServicesExtra() {
                 <Box key={stat.title}>
                   <Text
                     fontSize={"2xl"}
-                    color={"white"}
                     mb={3}
                     fontWeight="600"
                     fontFamily="Inter, sans-serif"

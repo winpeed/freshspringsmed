@@ -16,7 +16,7 @@ export default function PageTitle({
   firstTitle,
   secondTitle,
 }: {
-  firstTitle: string;
+  firstTitle?: string;
   secondTitle?: string;
 }) {
   return (
@@ -42,10 +42,10 @@ export default function PageTitle({
             paddingBottom={4}
             lineHeight="1.2"
           >
-            {firstTitle}{" "}
             <Text as={"span"} color={"#4299e1"}>
-              {secondTitle}
-            </Text>
+              {firstTitle}
+            </Text>{" "}
+            <Text as={"span"}>{secondTitle}</Text>
           </Heading>
         </Stack>
       </Container>

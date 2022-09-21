@@ -22,8 +22,9 @@ import { MoonIcon, SunIcon, HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 const Links = [
   { id: 1, text: "Home", url: "/" },
   { id: 2, text: "About", url: "/about" },
-  { id: 3, text: "FAQs", url: "/faq" },
-  { id: 4, text: "Contact Us", url: "/contact" },
+  { id: 3, text: "Services", url: "/services" },
+  { id: 4, text: "FAQs", url: "/faq" },
+  { id: 5, text: "Contact Us", url: "/contact" },
 ];
 
 const NavLink = ({ children, url }: { children: ReactNode; url: string }) => (

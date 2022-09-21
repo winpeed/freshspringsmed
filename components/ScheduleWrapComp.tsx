@@ -14,7 +14,7 @@ export default function ScheduleWrapComp() {
     <Box
       py={"5em"}
       px={4}
-      marginTop={{ base: "2em", lg: "-3em" }}
+      marginTop={{ base: "0em", lg: "0em" }}
       bg={"gray.800"}
       color={useColorModeValue("gray.700", "gray.200")}
     >
@@ -67,7 +67,7 @@ export default function ScheduleWrapComp() {
                 bg: "yellow.500",
               }}
             >
-              Send a Message
+              Schedule Appointment
             </Button>
           </Link>
         </Stack>
