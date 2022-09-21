@@ -82,8 +82,8 @@ function FaqAccordion() {
                   <Box
                     flex="1"
                     textAlign="left"
-                    fontSize="1.2rem"
-                    padding="1em 0em"
+                    fontSize="1.1rem"
+                    padding="0.75em 0em"
                   >
                     {item.title}
                   </Box>
