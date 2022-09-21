@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function PrivacyComp() {
   return (
-    <Box mb={{ base: 8, md: 20 }} maxWidth="1100px" margin="0 auto">
+    <Box mb={{ base: 8, md: 20 }} maxWidth="1100px" margin="0 auto" p={5}>
       <Heading
         mb={5}
         padding="1em 0em 0em 0em"
