@@ -21,7 +21,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { BsFacebook, BsPerson, BsInstagram } from "react-icons/bs";
-import { MdEmail, MdOutlineEmail } from "react-icons/md";
+import { MdEmail, MdOutlineEmail, MdLocationPin } from "react-icons/md";
 
 const confetti = {
   light: {
@@ -185,8 +185,18 @@ export default function ContactForm() {
               </Box>
             </Stack>
             <Stack direction="column" alignItems={"center"}>
+              <IconButton
+                aria-label="Office Location"
+                variant="ghost"
+                size="lg"
+                icon={<MdLocationPin size="22px" />}
+                _hover={{
+                  bg: "blue.500",
+                  color: useColorModeValue("white", "gray.700"),
+                }}
+              />
+
               <Text
-                py="5"
                 px="10"
                 maxW={"400"}
                 my={"0"}

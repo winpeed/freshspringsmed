@@ -15,7 +15,7 @@ export default function ScheduleWrapComp() {
       py={"5em"}
       px={4}
       marginTop={{ base: "2em", lg: "-3em" }}
-      bg={useColorModeValue("gray.50", "gray.900")}
+      bg={"gray.800"}
       color={useColorModeValue("gray.700", "gray.200")}
     >
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
@@ -25,11 +25,12 @@ export default function ScheduleWrapComp() {
           paddingTop={2}
           paddingBottom={4}
           lineHeight="1.7"
+          color={"gray.100"}
         >
           Schedule A Visit
         </Heading>
         <Text
-          color={"gray.500"}
+          color={"gray.400"}
           fontSize={{ base: "md", lg: "lg" }}
           lineHeight="1.7"
           textAlign="left"
@@ -39,7 +40,7 @@ export default function ScheduleWrapComp() {
           procedures.
         </Text>
         <Text
-          color={"gray.500"}
+          color={"gray.400"}
           fontSize={{ base: "md", lg: "lg" }}
           lineHeight="1.7"
           textAlign="left"

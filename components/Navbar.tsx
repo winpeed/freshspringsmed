@@ -41,7 +41,7 @@ const NavLink = ({ children, url }: { children: ReactNode; url: string }) => (
   </Link>
 );
 
-export default function Simple() {
+export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
 
