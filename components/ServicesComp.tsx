@@ -9,11 +9,6 @@ import {
   Box,
   Icon,
 } from "@chakra-ui/react";
-import {
-  IoAnalyticsSharp,
-  IoLogoBitcoin,
-  IoSearchSharp,
-} from "react-icons/io5";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import { ReactElement } from "react";
 

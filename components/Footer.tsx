@@ -5,8 +5,6 @@ import {
   SimpleGrid,
   Stack,
   Text,
-  Flex,
-  Tag,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { ReactNode } from "react";

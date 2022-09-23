@@ -6,7 +6,6 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
-  Heading,
 } from "@chakra-ui/react";
 
 const questions = [

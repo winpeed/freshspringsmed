@@ -4,20 +4,13 @@ import {
   Container,
   Stack,
   Text,
-  Image,
   Flex,
   VStack,
-  Button,
-  Heading,
   SimpleGrid,
   StackDivider,
   useColorModeValue,
-  VisuallyHidden,
-  List,
-  ListItem,
 } from "@chakra-ui/react";
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
-import { MdLocalShipping } from "react-icons/md";
+import Image from "next/image";
 
 export default function AboutComp() {
   return (
@@ -30,13 +23,13 @@ export default function AboutComp() {
       >
         <Flex>
           <Image
-            rounded={"md"}
-            alt={"product image"}
+            placeholder="blur"
+            blurDataURL="/blur.jpg"
+            alt={"Fresh Springs Med Building"}
             src="/building.jpg"
-            fit={"contain"}
-            align={"center"}
-            w={"95%"}
-            h={{ base: "100%", sm: "230px", lg: "500px" }}
+            objectFit={"contain"}
+            width="500px"
+            height="420px"
           />
         </Flex>
         <Stack spacing={{ base: 6, md: 10 }}>

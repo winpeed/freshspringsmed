@@ -6,7 +6,6 @@ import {
   Heading,
   Container,
   Text,
-  Button,
   Stack,
   createIcon,
   useColorModeValue,

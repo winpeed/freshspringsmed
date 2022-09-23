@@ -2,11 +2,11 @@ import {
   Button,
   Flex,
   Heading,
-  Image,
   Stack,
   Text,
   useBreakpointValue,
 } from "@chakra-ui/react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function SplitScreen() {
@@ -79,6 +79,8 @@ export default function SplitScreen() {
           src="/adorable-baby.jpg"
           height={390}
           width={650}
+          placeholder="blur"
+          blurDataURL="/blur.jpg"
         />
       </Flex>
     </Stack>
