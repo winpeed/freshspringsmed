@@ -6,8 +6,8 @@ import {
   Text,
   Heading,
   SimpleGrid,
-  Image,
 } from "@chakra-ui/react";
+import Image from "next/image";
 
 export default function ServicesExtra() {
   return (
@@ -15,7 +15,12 @@ export default function ServicesExtra() {
       <Flex flex={1} zIndex={0} display={{ base: "none", lg: "flex" }}>
         <Flex w={"full"} h={"full"} />
       </Flex>
-      <Container maxW={"7xl"} zIndex={10} position={"relative"}>
+      <Container
+        maxW={"7xl"}
+        zIndex={10}
+        position={"relative"}
+        style={{ maxWidth: "94%" }}
+      >
         <Stack direction={{ base: "column", lg: "row" }}>
           <Stack
             flex={1}
@@ -59,35 +64,43 @@ export default function ServicesExtra() {
           </Stack>
           <Flex flex={1} alignItems="center" justifyContent="center">
             <Stack>
-              <Image
-                rounded={"md"}
-                alt={"feature image"}
-                src="doctor-kay.jpg"
-                objectFit={"cover"}
-                height="300px"
-                width="400px"
-                marginBottom="2em"
-              />
+              <Box>
+                <Image
+                  alt={"feature image"}
+                  src="/doctor-kay.jpg"
+                  objectFit={"cover"}
+                  height="300px"
+                  width="400px"
+                  blurDataURL="/blur.jpg"
+                  placeholder="blur"
+                />
+              </Box>
 
-              <Image
-                rounded={"md"}
-                alt={"Nurses at Fresh Springs"}
-                src="nurses-2.jpg"
-                objectFit={"contain"}
-                height="300px"
-                width="400px"
-                marginBottom="2em"
-              />
+              <Box>
+                <Image
+                  alt={"Nurses at Fresh Springs"}
+                  src="/nurses-2.jpg"
+                  objectFit={"contain"}
+                  height="300px"
+                  width="400px"
+                  style={{ marginBottom: "2em" }}
+                  blurDataURL="/blur.jpg"
+                  placeholder="blur"
+                />
+              </Box>
 
-              <Image
-                rounded={"md"}
-                alt={"Baby at Fresh Springs"}
-                src="baby.jpg"
-                objectFit={"contain"}
-                height="300px"
-                width="400px"
-                marginBottom="2em"
-              />
+              <Box>
+                <Image
+                  alt={"Baby at Fresh Springs"}
+                  src="/baby.jpg"
+                  objectFit={"contain"}
+                  height="300px"
+                  width="400px"
+                  style={{ marginBottom: "2em" }}
+                  blurDataURL="/blur.jpg"
+                  placeholder="blur"
+                />
+              </Box>
             </Stack>
           </Flex>
         </Stack>

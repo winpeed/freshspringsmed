@@ -1,7 +1,6 @@
 import {
   Container,
   SimpleGrid,
-  Image,
   Flex,
   Heading,
   Text,
@@ -9,6 +8,7 @@ import {
   Box,
   Icon,
 } from "@chakra-ui/react";
+import Image from "next/image";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import { ReactElement } from "react";
 
@@ -148,12 +148,20 @@ export default function ServicesComp() {
             />
           </Stack>
         </Stack>
-        <Flex>
+        <Flex
+          style={{
+            width: "100%",
+            height: "100%",
+            position: "relative",
+          }}
+        >
           <Image
-            rounded={"md"}
             alt={"feature image"}
-            src="doctors.jpg"
+            src="/doctors.jpg"
             objectFit={"cover"}
+            blurDataURL="/blur.jpg"
+            placeholder="blur"
+            layout="fill"
           />
         </Flex>
       </SimpleGrid>
@@ -205,12 +213,23 @@ export default function ServicesComp() {
         </Stack>
       </SimpleGrid>
 
-      <Box display="flex" justifyContent="center">
+      <Box
+        display="flex"
+        justifyContent="center"
+        style={{
+          width: "100%",
+          height: "100%",
+          position: "relative",
+          marginBottom: "2em",
+        }}
+      >
         <Image
-          rounded={"md"}
+          layout="fill"
           alt={"Equipment image"}
-          src="equipment.jpg"
+          src="/equipment.jpg"
           objectFit={"cover"}
+          blurDataURL="/blur.jpg"
+          placeholder="blur"
         />
       </Box>
 
@@ -248,15 +267,6 @@ export default function ServicesComp() {
           </Text>
         </Stack>
       </SimpleGrid>
-
-      <Box display="flex" justifyContent="center">
-        <Image
-          rounded={"md"}
-          alt={"Nurses at work"}
-          src="/nurses.jpg"
-          objectFit={"cover"}
-        />
-      </Box>
 
       <SimpleGrid
         columns={{ base: 1, md: 2 }}
